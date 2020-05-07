@@ -1,3 +1,4 @@
 <resources>
-    <string name="app_name">OwnStoryApp</string>
+    <string name="app_name">Signals From Mars</string>
+    <string name="user_name">name</string>
 </resources>

@@ -4,37 +4,46 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.ownstoryapp.ui.MainActivity">
+    tools:context="com.example.ownstoryapp.ui.StoryActivity">
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/pageImageView"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:adjustViewBounds="true"
         android:scaleType="fitXY"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/main_title" />
+        app:srcCompat="@drawable/page0" />
 
     <Button
-        android:id="@+id/startButton"
+        android:id="@+id/choiceButton2"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="Start Your Adventure"
+        android:text="Button"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
-    <EditText
-        android:id="@+id/userInput"
+    <Button
+        android:id="@+id/choiceButton1"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:ems="10"
-        android:hint="Name"
-        android:inputType="textPersonName"
-        app:layout_constraintBottom_toTopOf="@+id/startButton"
+        android:text="Button"
+        app:layout_constraintBottom_toTopOf="@+id/choiceButton2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/pageTextView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:padding="10dp"
+        android:text="This is placeholder text"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/choiceButton1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pageImageView" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
