@@ -6,16 +6,6 @@
     android:layout_height="match_parent"
     tools:context="com.example.ownstoryapp.ui.StoryActivity">
 
-    <ImageView
-        android:id="@+id/pageImageView"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:scaleType="fitXY"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/page0" />
-
     <Button
         android:id="@+id/choiceButton2"
         android:layout_width="0dp"
@@ -34,16 +24,34 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
-    <TextView
-        android:id="@+id/pageTextView"
+    <ScrollView
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:padding="10dp"
-        android:text="This is placeholder text"
-        android:textSize="16sp"
         app:layout_constraintBottom_toTopOf="@+id/choiceButton1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/pageImageView" />
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/pageImageView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/page0" />
+
+            <TextView
+                android:id="@+id/pageTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="This is placeholder text"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </ScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
